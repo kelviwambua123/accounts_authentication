@@ -1,5 +1,5 @@
 """
-URL configuration for todo_project project.
+URL configuration for authproj project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -20,11 +20,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path('', include('todo.urls')),
-    # path('api/', include('todo_api.urls')),
-    path('', include('accounts.urls')),
+    path('accounts/', include('accounts.urls')),
 ]
-# http://127.0.0.1:8000/api/
-# http://127.0.0.1:8000/
-# http://127.0.0.1:8000/admin
-# http://127.0.0.1:8000/accounts
